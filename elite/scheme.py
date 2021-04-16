@@ -43,6 +43,18 @@ class ECCScheme:
     def importHexKey(self, key: str) -> str:
         'Imports the hex version of the remote key.'
         self._remoteKey = PublicKey.fromHex(key, self._kind)
+    @property
+    def privateKey(self) -> PrivateKey:
+        'Gets the private key.'
+        return self._privateKey
+    @property
+    def publicKey(self) -> PublicKey:
+        'Gets the public key.'
+        return self._publicKey
+    @property
+    def remoteKey(self) -> PublicKey:
+        'Gets the remote key.'
+        return self._remoteKey
     def sign(self, data: bytes) -> bytes:
         'Signs the data with remote key.'
         return self._privateKey._key.sign(data)
