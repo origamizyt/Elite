@@ -5,7 +5,7 @@ with open('README.md') as fp:
 
 setup(
     name = 'Elite',
-    version = '1.1.0',
+    version = '1.1.1',
     author = 'origamizyt',
     author_email = 'zhaoyitong18@163.com',
     description = 'A lightweight module for elliptic-curve security schemes.',
