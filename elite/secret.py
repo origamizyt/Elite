@@ -13,7 +13,8 @@ from hashlib import sha256, sha384
 from typing import Tuple, Union
 
 __all__ = ['EliteKeyError', 'CurveKind', 'UnsupportedCurve', 'KeyExport', 'PrivateKey',
-           'PublicKey', 'generate', 'generate_pair', 'shared_secret', 'public_key_size']
+           'PublicKey', 'generate', 'generate_pair', 'shared_secret', 'public_key_size',
+           'CurveKindMismatch']
 
 class EliteKeyError(EliteError):
     'General base class for key errors.'

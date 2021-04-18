@@ -1,4 +1,4 @@
-# Elite v1.1.0
+# Elite v1.1.1
 
 A lightweight module for elliptic-curve security schemes.
 
@@ -81,6 +81,11 @@ from elite.cipher import getprovider
 from elite.secret import CurveKind
 
 s = ECCScheme(CurveKind.CK_SECP256K1, getprovider())
+```
+
+You can test the module using unittest:
+```
+$ python -m unittest elite.test --verbose
 ```
 
 For deeper usage, please view the source code.
